@@ -1,10 +1,11 @@
 [project]
-name = "agentops"
+name = "callback"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "gohumanloop>=0.0.8",
+    "agentops>=0.4.13",
+    "gohumanloop>=0.0.9",
     "langgraph>=0.4.7",
 ]
