@@ -1,3 +1,10 @@
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [
+# "gohumanloop>=0.0.10",
+# "langgraph>=0.4.7",
+# "langchain-openai>=0.3.12"]
+# ///
 """
 LangGraph框架中使用require_conversation装饰器的简化示例
 

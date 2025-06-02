@@ -1,3 +1,11 @@
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [
+# "gohumanloop>=0.0.10",
+# "langgraph>=0.4.7",
+# "langchain-openai>=0.3.12"]
+# ///
+
 import uuid
 import time
 from typing import Optional

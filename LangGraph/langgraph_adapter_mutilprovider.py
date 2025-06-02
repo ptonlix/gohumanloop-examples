@@ -1,3 +1,13 @@
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [
+# "gohumanloop>=0.0.10",
+# "langgraph>=0.4.7",
+# "langchain-openai>=0.3.12",
+# "imapclient>=3.0.1"]
+# ///
+
+
 from typing import Dict, Any, List, Annotated, TypedDict
 import operator
 import os
@@ -8,7 +18,7 @@ from langgraph.graph import StateGraph, END
 from langgraph.prebuilt import ToolNode
 
 from gohumanloop.adapters.langgraph_adapter import HumanloopAdapter
-from gohumanloop.manager.ghl_manager import GoHumanLoopManager
+from gohumanloop  import DefaultHumanLoopManager
 from gohumanloop.providers.terminal_provider import TerminalProvider
 from gohumanloop.providers.email_provider import EmailProvider
 from gohumanloop.core.interface import HumanLoopStatus
@@ -46,8 +56,8 @@ recipient_email = os.environ.get("TEST_RECIPIENT_EMAIL", "your_email@example.com
 llm = ChatOpenAI(model="deepseek-chat", base_url=api_base)
 
 # 创建 HumanLoopManager 实例
-manager = GoHumanLoopManager(
-    additional_providers=[
+manager = DefaultHumanLoopManager(
+    initial_providers=[
         TerminalProvider(name="TerminalProvider"),
         EmailProvider(
             name="EmailProvider",

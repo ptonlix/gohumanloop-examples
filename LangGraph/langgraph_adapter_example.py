@@ -1,3 +1,11 @@
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [
+# "gohumanloop>=0.0.9",
+# "langgraph>=0.4.7",
+# "langchain-openai>=0.3.12"]
+# ///
+
 from typing import Dict, Any, List, Annotated, TypedDict
 import operator
 import os
@@ -224,3 +232,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
