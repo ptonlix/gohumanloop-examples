@@ -9,6 +9,7 @@ This example shows how to use the GoHumanLoop package to create a LangGraph agen
 - Mutil-provider example - [langgraph_multi_provider_example.py](./langgraph_multi_provider_example.py)
 - LangGraph "interrupt" simple example - [langgraph_interrupt_example.py](./langgraph_interrupt_example.py)
 - Gohumanloop callback example - [langgraph_callback_example.py](./langgraph_callback_example.py)
+- Gohumanloop wework example - [langgraph_wework.py](./langgraph_wework.py)
 
 ## Start
 
