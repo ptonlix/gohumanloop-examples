@@ -7,6 +7,7 @@ A collection of examples that show how to use GoHumanLoop to perfecting AI workf
 - [CrewAI](CrewAI)
 - [LangGraph](LangGraph)
 - [AgentOps](AgentOps)
+- [MCP](MCP)
 
 ## 📱 Contact
 
